@@ -1,0 +1,75 @@
+.top{
+    width: 100%;
+    background-position: right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-description{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.top-text-area{
+    width: 55%;
+    padding-left: 5%;
+}
+.top-logo{
+    position: absolute;
+    top: 85vh;
+
+    height: 10px;
+    padding-left: 5%;
+
+    display: flex;
+}
+.top-logo-icon{
+    height: 50px;
+    padding-right: 50px;
+}
+
+@media (min-width:1024px) {
+    .top{
+        height: 100vh;
+        
+        background-image: linear-gradient(to right, var(--bg) 60%, rgba(0, 0, 0, 0.5) 50%) ,
+        url(/media/pictures/legasy-enterprise-software.jpg);
+    }
+    .top-description{
+        height: 100vh;
+    }
+    .nav-body .mobile{
+        display: none;
+    }
+}
+@media (max-width:1023px) {
+    .top{
+        background-image: linear-gradient(to right, #00000086 100%, #003cff1c 100%) ,
+        url(/media/pictures/legasy-enterprise-software.jpg);
+    }
+    .menu-icon{
+        padding-right:10px;
+    }
+    .nav-body .pc{
+        display: none;
+    }
+    .top{
+        height: 100vh;
+        
+    }
+    .top-description{
+        height: 100vh;
+    }   
+}
+@media (orientation:portrait) {
+    .top-logo-icon{
+        height: 40px;
+        padding-right: 30px;
+    }
+}

@@ -1,0 +1,67 @@
+.top-text-area h1{
+    font-size: 3.5rem;
+}
+.headings{
+    font-size: 450%;
+}
+.skill-box{
+    font-size: 1.5rem;
+}
+.center{
+    text-align: center;
+}
+.description{
+    font-size: 2rem;
+}
+.skill-heading{
+    font-size: 3rem;
+}
+
+*{
+    color: var(--text);
+}
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+@media (orientation:landscape) {
+    html{
+        font-size: 16px;
+    }
+    .headings-deco{
+        height: 95px;
+    }
+    .headings-deco-project{
+        height: 120px;
+    }
+}
+@media (orientation:portrait) {
+    .headings-deco{
+        height: 90px;
+    }
+    .headings-deco-project{
+        height: 120px;
+    }
+}
+@media (max-width:500px) {
+    html{
+        font-size: 12px;
+    }
+    .headings-deco{
+        height: 70px;
+    }
+    .headings-deco-project{
+        height: 90px;
+    }
+}
+@media (max-width:400px) {
+    html{
+        font-size: 10px;
+    }
+    .headings-deco{
+        height: 65px;
+    }
+    .headings-deco-project{
+        height: 80px;
+    }
+}

@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+summary{
+    list-style-type: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.absolute{
+    position: absolute;
+}
