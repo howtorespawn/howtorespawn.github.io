@@ -1,5 +1,6 @@
 .top{
     width: 100%;
+    height: 100vh;
     background-position: right;
     background-size: cover;
     display: flex;
@@ -36,8 +37,6 @@
 
 @media (min-width:1024px) {
     .top{
-        height: 100vh;
-        
         background-image: linear-gradient(to right, var(--bg) 60%, rgba(0, 0, 0, 0.5) 50%) ,
         url(/media/pictures/legasy-enterprise-software.jpg);
     }

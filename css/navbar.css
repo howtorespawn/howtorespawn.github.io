@@ -28,6 +28,10 @@
 
 /* PC */
 @media (min-width:1024px) {
+    .menu-body{
+        position: absolute;
+        top: 70px;
+    }
     .nav-text{
         display: flex;
         justify-content: space-evenly;
