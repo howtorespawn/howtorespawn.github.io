@@ -30,12 +30,14 @@
     height: auto;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .skill-box{
     width: 30vw;
     height: auto;
     padding: 20px 10px 20px 10px;
+    margin-bottom: 20px;
 
     background-color: var(--bg-third);
     border: 1px black solid;
@@ -44,6 +46,9 @@
     display: flex;
     justify-content: start;
     flex-direction: column;
+}
+.skill-box p {
+    font-size: 22px;
 }
 .skill-logo{
     height: 60px;
