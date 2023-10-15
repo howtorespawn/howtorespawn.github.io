@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
 }
-
 .top-description{
     z-index: 0;
     position: absolute;
