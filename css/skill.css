@@ -28,9 +28,9 @@
 }
 .skill-container-1{
     height: auto;
-
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 .skill-box{
@@ -47,6 +47,9 @@
     flex-direction: column;
     box-shadow: 0px 0px 50px #000000b4;
     z-index: 0;
+}
+.skill-box p {
+    font-size: 22px;
 }
 .skill-box p {
     font-size: 22px;
