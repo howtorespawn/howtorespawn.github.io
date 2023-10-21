@@ -34,10 +34,10 @@
     justify-content: space-evenly;
 }
 .skill-box{
-    width: 30vw;
+    width: 25vw;
     height: auto;
     padding: 20px 10px 20px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     background-color: var(--bg-third);
     border-radius: 10px;
@@ -49,13 +49,15 @@
     z-index: 0;
 }
 .skill-box p {
-    font-size: 22px;
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
+    text-justify: auto;
 }
 .skill-box p {
-    font-size: 22px;
+    font-size: 18px;
 }
 .skill-logo{
-    height: 60px;
+    height: 55px;
     width: auto;
 }
 .skill-text{

@@ -1,7 +1,18 @@
-.top{
+.hero-wave{
     width: 100%;
     height: 100vh;
-    background-position: right;
+    position: absolute;
+    background-image: url(http://front-end-noobs.com/jecko/img/wave-top.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 00px;
+    animation: wave 2s infinite ease-in-out;
+}
+.top{
+    background-image: url(/media/pictures/main-bg.webp);
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -17,40 +28,144 @@
     align-content: center;
 }
 .top-text-area{
-    width: 55%;
-    padding-left: 5%;
+    padding-left: 15%;
 }
 .top-logo{
     position: absolute;
-    top: 85vh;
-
-    height: 10px;
-    padding-left: 5%;
-
+    top: 83vh;
+    padding-left: 15%;
     display: flex;
+}
+.top-logo a{
+    margin-right: 20px;
 }
 .top-logo-icon{
     height: 50px;
     padding-right: 50px;
 }
 
-@media (min-width:1024px) {
-    .top{
-        background-image: linear-gradient(to right, var(--bg) 60%, rgba(0, 0, 0, 0.5) 50%) ,
-        url(/media/pictures/legasy-enterprise-software.jpg);
+.nav-body{
+    animation-name: revealsudden;
+    animation-duration: 1.5s;
+}
+.tta1{
+    text-wrap: nowrap;
+    animation-name: revealsudden;
+    animation-duration: 2s;
+}
+.tta2{
+    text-wrap: nowrap;
+    animation-name: revealsudden;
+    animation-duration: 3s;
+}
+.tta3{
+    text-wrap: nowrap;
+    animation-name: revealsudden;
+    animation-duration: 4s;
+}
+.top-logo a{
+    animation-name: revealsudden;
+    animation-duration: 5s;
+}
+.menu-body{
+    animation-name: animationreveal;
+    animation-duration: 2s;
+}
+.menu-body a{
+    animation-name: revealsudden;
+    animation-duration: 3s;
+}
+@keyframes reveal {
+    0%{
+        opacity: 0;
     }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes revealsudden {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animationreveal {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes blink {
+    0%{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    45%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    50%{
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    55%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+@media (min-width:1024px) {
     .top-description{
         height: 100vh;
     }
     .nav-body .mobile{
         display: none;
     }
+    .cat-section{
+        top: 50vh;
+        left: 70vw;
+        height: auto;
+        width: auto;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        animation: revealsudden 3s;
+    }
+    .cat{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    .cat-body{
+        position: absolute;
+    }
+    .cat-eyes{
+        position: absolute;
+        right: 30%;
+        animation: blink 5s infinite;
+    }
+    .cat-mouth{
+        position: absolute;
+        right: 2.5vw;
+        top:0vh;
+    }
 }
 @media (max-width:1023px) {
-    .top{
-        background-image: linear-gradient(to right, #00000086 100%, #003cff1c 100%) ,
-        url(/media/pictures/legasy-enterprise-software.jpg);
-    }
     .menu-icon{
         padding-right:10px;
     }
@@ -63,11 +178,43 @@
     }
     .top-description{
         height: 100vh;
-    }   
+    }
+    .top-logo{
+        position: absolute;
+        top: 83vh;
+        display: flex;
+        padding-left: 8%;
+    }
+    .top-text-area{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .cat-section{
+        top: 50vh;
+        left: 70vw;
+        height: auto;
+        width: auto;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        animation: revealsudden 3s;
+    }
+    .cat-section{
+        display: none;
+    }
 }
-@media (orientation:portrait) {
+@media (max-width:500px) {
+    .top-text-area{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .top-logo{
+        padding: none;
+        margin: none;
+        padding-left: 5%;
+    }
     .top-logo-icon{
-        height: 40px;
-        padding-right: 30px;
+        padding-right: 0px;
     }
 }

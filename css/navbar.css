@@ -3,13 +3,14 @@
     top: 0px;
     z-index: 2;
 
-    height: 70px;
-    width: 100%;
+    height: 100px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    animation-name: revealsudden;
+    animation-duration: 0.5s
 }
 .nav-body a{
     text-decoration: none;
@@ -17,7 +18,6 @@
 .nav-logo{
     display: flex;
     align-items: center;
-    padding: 10px;
 }
 .nav-logo-img{
     height: 50px;
@@ -28,6 +28,13 @@
 
 /* PC */
 @media (min-width:1024px) {
+    #home{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-body{
+        width: 80%;
+    }
     .menu-body{
         position: absolute;
         top: 70px;
@@ -46,7 +53,10 @@
 }
 @media (max-width:1023px) {
     .nav-body{
-        background-color: var(--bg-secondary);
+        width: 100%;
+    }
+    .nav-logo{
+        padding: 10px;
     }
     .menu-icon{
         padding: 10px;
@@ -54,19 +64,19 @@
     .menu-body{
         z-index: 1;
         position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: auto;
+        top: 80px;
+        right: 20px;
         padding: 10px;
 
-        background-color: var(--bg-third);
+        height: auto;
+        width: 40%;
+
+        background-color: #163dbd0e;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        border-radius: 0 0 10px 10px;
+        border-radius: 30px 0 30px 30px;
         border: 2px var(--darktheme-border) solid;
         box-shadow: 0 0 10px rgb(26, 29, 63);
     }
