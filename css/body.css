@@ -14,3 +14,16 @@ summary{
 .absolute{
     position: absolute;
 }
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #100E17;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d3361;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c234d;
+}
