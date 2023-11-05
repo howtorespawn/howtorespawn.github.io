@@ -1,0 +1,47 @@
+.btn41-43 {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn41-43:nth-child(1) {
+    background-color: #0078D4;
+}
+.btn-41 {
+  border: 2px solid #0078D4;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #0091ff;
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}

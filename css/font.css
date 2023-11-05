@@ -30,7 +30,7 @@ a {
   color: var(--text);
   text-decoration: none;
 }
-
+/* 
 @media (orientation: landscape) {
   html {
     font-size: 16px;
@@ -43,9 +43,11 @@ a {
   .headings-deco-project {
     height: 120px;
   }
-}
-
-@media (orientation: portrait) {
+} */
+@media (max-width: 1025px) {
+  html {
+    font-size: 12px;
+  }
   .headings-deco {
     height: 90px;
   }
@@ -54,10 +56,21 @@ a {
     height: 120px;
   }
 }
+@media (min-width: 1026px) {
+  html {
+    font-size: 16px;
+  }
+  .headings-deco {
+    height: 90px;
+  }
 
+  .headings-deco-project {
+    height: 120px;
+  }
+}
 @media (max-width: 500px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .headings-deco {
@@ -71,14 +84,16 @@ a {
 
 @media (max-width: 400px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .headings-deco {
     height: 65px;
   }
-
   .headings-deco-project {
     height: 80px;
+  }
+  .btn41-43 {
+    font-size: 15px;
   }
 }

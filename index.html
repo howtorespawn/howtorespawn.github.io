@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="HowToRespawn or Fateh Mudassar a website developer
+           makes you a cheap website of your choice and desire
+           and can make your web applications as well.">
     <title>Home Page</title>
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/body.css">
-    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/button.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/project.css">
@@ -14,8 +19,16 @@
     <link rel="stylesheet" href="/css/skill.css">
     <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/top.css">
+    <link rel="stylesheet" href="/css/font.css">
 </headv>
 <body>
+    <section class="cat-section pc">
+        <div class="cat">
+            <img class="cat-body" src="/media/cat/body.svg" alt="">
+            <img class="cat-eyes" src="/media/cat/eyes.svg" alt="">
+            <img class="cat-mouth" src="/media/cat/mouth.svg" alt="">
+        </div>
+    </section>
     <header id="home">
         <div class="nav-body">
             <div class="nav-logo">
@@ -43,21 +56,22 @@
                 </details>
             </div>
         </div>
-
-
         <div class="top">
             <div class="top-description">
                 <div class="top-text-area">
-                    <h1>Hello!</h1>
-                    <h1>I am <span style="color: rgb(255, 102, 0);">HowToRespawn</span></h1>
-                    <h1>A <span style="color: rgb(255, 115, 0);">Web</span> Developer!</h1>
+                    <h1 class="tta tta1">Hello!</h1>
+                    <h1 class="tta tta2">I am <span style="color: #0078D4;">HowToRespawn</span></h1>
+                    <h1 class="tta tta3">A <span style="color: #0078D4;">Web</span> Developer!</h1>
                 </div>
             </div>
 
             <div class="top-logo">
-                <a href="https://discord.com/users/743776395183915028"><img src="media/icon/discord.svg"  alt="discord"   class="top-logo-icon"></a>
-                <a href="mailto:howtorespawn@gmail.com"><img src="media/icon/mail.svg"     alt="mail"      class="top-logo-icon"></a>
-                <!-- <a href="https://www.linkedin.com/in/fateh-m-30b776286/"><img src="media/icon/linkedin.svg" alt="linkedin"  class="top-logo-icon"></a> -->
+                <a href="#" class="btn41-43 btn-41">
+                    Contact Me!
+                </a>
+                <a href="#project" class="btn41-43 btn-41">
+                    Projects
+                </a>
             </div>
 
         </div>
@@ -68,7 +82,7 @@
             <h1 class="index-1 absolute headings">About</h1>
         </div>
         <div class="heading-description">
-            <p class="description">Hello, I am <span style="color: rgb(255, 102, 0);">HowToRespawn</span>.</p>
+            <p class="description">Hello, I am <span style="color: #0078D4; font-weight: 700;">HowToRespawn</span>.</p>
         </div>
         <div class="about-container">
             <div class="about-box">
@@ -187,7 +201,6 @@
 
         </div>
     </section>
-
     <section class="project" id="project">
         <div class="projects">
             <div class="header-1">
@@ -198,28 +211,58 @@
                 <p class="description">Hello there! I am a Web Developer. I can make/design your webpage for you. I know HTML and CSS and I am currently learning JavaScript.</p>
             </div>
             <div class="project-containers">
-                <div class="project-body">
-                    <div class="project-img">
-                        <img class="website-preview" src="/media/pictures/artwebsite.jpg" alt="artwebsite">
-                    </div>
-                    <div class="project-text">
-                        <h1>Art Website:</h1>
-                        <p>A simple yet beautiful about art and motivation.</p>
-                    </div>
+                <div class="project-body" onmouseover="showInfo(1)" onmouseout="hideInfo(1)">
+                    <a href="https://howtorespawn.github.io/gallery/" aria-label="Visit Gallery Website">
+                        <div class="project-img">
+                            <img class="website-preview" src="/media/pictures/artwebsite.jpg" alt="artwebsite">
+                        </div>
+                        <div class="project-text" id="pt1">
+                            <h1>Art Website:</h1>
+                            <p>A simple yet beautiful about art and motivation.</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="project-body">
-                    <div class="project-img">
-                        <img class="website-preview" src="/media/pictures/pizzatemplatepreview.jpg" alt="">
-                    </div>
-                    <div class="project-text">
-                        <h1>Pizza Website:</h1>
-                        <p>A old Website about pizza place.</p>
-                    </div>
+                <div class="project-body" onmouseover="showInfo(2)" onmouseout="hideInfo(2)">
+                    <a href="https://pizzatemplate.netlify.app/" aria-label="Visit pizza Website">
+                        <div class="project-img">
+                            <img class="website-preview" src="/media/pictures/pizzatemplatepreview.jpg" alt="Pizza website">
+                        </div>
+                        <div class="project-text" id="pt2">
+                            <h1>Pizza Website:</h1>
+                            <p>A old Website about pizza place.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-body" onmouseover="showInfo(3)" onmouseout="hideInfo(3)">
+                    <a href="https://howtorespawn.github.io/calculator" aria-label="Visit Calculator Application">
+                        <div class="project-img">
+                            <img class="website-preview" src="/media/pictures/calculatorpreview.jpg" alt="Calculator Application">
+                        </div>
+                        <div class="project-text" id="pt3">
+                            <h1>Calculator:</h1>
+                            <p>A JavaScript Project about a Calculator.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-body" onmouseover="showInfo(4)" onmouseout="hideInfo(4)">
+                    <a href="https://howtorespawn.github.io/filter" aria-label="Visit Filter Application">
+                        <div class="project-img">
+                            <img class="website-preview" src="/media/pictures/filterpreview.jpg" alt="Filter Application">
+                        </div>
+                        <div class="project-text" id="pt4">
+                            <div>
+                                <h1>Filter:</h1>
+                                <p>A JavaScript Project about Filter system used mainly in e-commerce website.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="contact" id="contact">
 
+    </section>
     <footer>
         <div class="footer-1 footer-con">
             <a href="index.html" style="border-radius: 100px;"><img class="footer-logo-img" src="/media/icon/duck.webp" alt="duck"></a>
@@ -244,5 +287,6 @@
         </div>
 
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
