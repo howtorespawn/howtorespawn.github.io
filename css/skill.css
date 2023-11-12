@@ -30,21 +30,25 @@
     height: auto;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .skill-box{
-    width: 30vw;
+    width: 25vw;
     height: auto;
     padding: 20px 10px 20px 10px;
+    margin-bottom: 40px;
 
     background-color: var(--bg-third);
-    border: 1px black solid;
     border-radius: 10px;
 
     display: flex;
     justify-content: start;
     flex-direction: column;
+    box-shadow: 0px 0px 50px #000000b4;
+    z-index: 0;
 }
+
 .skill-logo{
     height: 60px;
     width: auto;
@@ -55,6 +59,11 @@
     margin-top: 5px;
     text-align: center;
     font-weight: 500;
+}
+.skill-text p{
+    font-size: 16px;
+    text-align: justify;
+    text-justify:auto;
 }
 @media (max-width:1023px) {
 

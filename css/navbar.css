@@ -27,7 +27,7 @@
 }
 
 /* PC */
-@media (min-width:1024px) {
+@media (min-width:1100px) {
     .menu-body{
         position: absolute;
         top: 70px;
@@ -44,7 +44,7 @@
         text-decoration: none;
     }
 }
-@media (max-width:1023px) {
+@media (max-width:1099px) {
     .nav-body{
         background-color: var(--bg-secondary);
     }
@@ -77,6 +77,7 @@
         padding-left: 10px;
     }
     .menu-body h1{
+        font-size: 27px;
         width: 100%;
         padding: 10px 0px 10px 0px;
         border-radius: 6px;
