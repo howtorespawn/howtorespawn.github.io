@@ -1,13 +1,22 @@
 .top-text-area h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
-
+@media (min-width:1024px) {
+  .top-text-area h1 {
+    font-size: 3rem;
+  }
+}
+  @media (min-width:1300px) {
+    .top-text-area h1 {
+      font-size: 3.5rem;
+    }
+  }
 .headings {
   font-size: 450%;
 }
 
 .skill-box {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .center {
@@ -15,7 +24,7 @@
 }
 
 .description {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .skill-heading {
@@ -68,15 +77,29 @@ a {
     height: 120px;
   }
 }
+@media (max-width: 900px) {
+  .description{
+    font-size: 25px;
+  }
+
+  .about-box h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .about-spacing h2{
+    font-size: 30px;
+  }
+  .about-spacing p{
+    font-size: 20px;
+  }
+}
 @media (max-width: 500px) {
   html {
     font-size: 10px;
   }
-
   .headings-deco {
     height: 70px;
   }
-
   .headings-deco-project {
     height: 90px;
   }

@@ -8,7 +8,7 @@
     font-size: 35px;
 }
 .about-container h2{
-    font-size: 30px;
+    font-size: 25px;
 }
 .about-container p{
     font-size: 18px;
@@ -32,6 +32,11 @@
 }
 .about-box p{
     padding-bottom: 23px;
+    color:#cfcfcf;
+}
+.about-box a{
+    padding-bottom: 23px;
+    color:#d4d4d4;
 }
 .about-box p:nth-last-child(1){
     padding-bottom: 0px;

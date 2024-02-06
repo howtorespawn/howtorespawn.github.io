@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
     name="description"
-    content="HowToRespawn or Fateh Mudassar a website developer
-           makes you a cheap website of your choice and desire
-           and can make your web applications as well.">
+    content="HowToRespawn or Fateh Mudassar a website developer makes you a cheap website of your choice and desire and can make your web applications as well.">
+    <link rel="prefetch" href="media/pictures/main-bg.webp" />
     <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="media/icon/duck.webp">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/animation.css">
     <link rel="stylesheet" href="/css/body.css">
     <link rel="stylesheet" href="/css/button.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -17,23 +18,14 @@
     <link rel="stylesheet" href="/css/project.css">
     <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/skill.css">
-    <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/top.css">
     <link rel="stylesheet" href="/css/font.css">
 </headv>
-<body>
-    <section class="cat-section pc">
-        <div class="cat">
-            <img class="cat-body" src="/media/cat/body.svg" alt="">
-            <img class="cat-eyes" src="/media/cat/eyes.svg" alt="">
-            <img class="cat-mouth" src="/media/cat/mouth.svg" alt="">
-        </div>
-    </section>
+<body id="body">
     <header id="home">
         <div class="nav-body">
             <div class="nav-logo">
                 <a style="border-radius: 100px;" href="index.html"><img class="nav-logo-img" src="/media/icon/duck.webp" alt="duck"></a>
-                <h1 class="nav-logo-text"><a href="">Duckie</a></h1>
             </div>
             <div class="nav-text pc">
                 <h1><a href="#home">Home</a></h1>
@@ -60,7 +52,7 @@
             <div class="top-description">
                 <div class="top-text-area">
                     <h1 class="tta tta1">Hello!</h1>
-                    <h1 class="tta tta2">I am <span style="color: #0078D4;">HowToRespawn</span></h1>
+                    <h1 class="tta tta2">I am <span style="color: #0078D4;">Fateh Mudassar</span></h1>
                     <h1 class="tta tta3">A <span style="color: #0078D4;">Web</span> Developer!</h1>
                 </div>
             </div>
@@ -76,6 +68,17 @@
 
         </div>
     </header>
+    <section class="cat-section pc" onmouseover="dontTouchMe()" onmouseout="hideDontTouchMe()">
+        <div class="cat" id="cat" onclick="catAnimation()">
+            <h1 id="cat-text">dont touch me</h1>
+            <img class="cat-gun right-funny" id="catGunRight" src="media/cat/right funny.png" alt="gunny :D">
+            <img class="cat-gun left-funny" id="catGunLeft" src="media/cat/left funny.png" alt="gunny :D">
+            <img class="cat-body" src="/media/cat/body.svg" alt="no meow ;c">
+            <img class="cat-mark" id="cat-mark" src="/media/cat/angry.png" alt="no meow :C">
+            <img class="cat-eyes" id="cat-eyes" src="/media/cat/eyes.svg" alt="no meow :C">
+            <img class="cat-mouth" id="cat-mouth" src="/media/cat/mouth.svg" alt="no meow :c">
+        </div>
+    </section>
     <section class="about" id="about">
         <div class="header-1">
             <img class="headings-deco" src="/media/headers/red.png" alt="orange header">
@@ -135,7 +138,7 @@
                 <h1 class="index-1 absolute headings">Skills</h1>
             </div>
             <div class="heading-description">
-                <p class="description">Hello there! I am a Web Developer. I can make/design your webpage for you. I know HTML and CSS and I am currently learning JavaScript.</p>
+                <p class="description">Hello there! I am a Web Developer. My skills are given below.</p>
             </div>
             <div class="skill-container-1">
                 <div class="skill-box">
@@ -147,6 +150,7 @@
                         <p>I am a web developer who can turn your dream website into a reality. Just share your design with me, and within a few days, you'll receive a fully customized website.</p>
                     </div>
                 </div>
+                
                 <div class="skill-box">
                     <div class="center">
                         <img class="skill-logo" src="/media/icon/webdes.png" alt="Webdev">
@@ -163,7 +167,7 @@
                     </div>
                     <div class="skill-text">
                         <h2>illustrator</h2>
-                        <p>I am an illustrator capable of performing basic video and image editing. I can create simple vector graphics. I primarily apply these skills in web design and development.</p>
+                        <p>I am an illustrator capable of performing basic video and image editing. I can create simple vector graphics. I primarily use these skills in web design and development.</p>
                     </div>
                 </div>
 
@@ -208,7 +212,7 @@
                 <h1 class="index-1 absolute headings">Projects</h1>
             </div>
             <div class="heading-description">
-                <p class="description">Hello there! I am a Web Developer. I can make/design your webpage for you. I know HTML and CSS and I am currently learning JavaScript.</p>
+                <p class="description">All my projects avalible to public. Clent work will be shown only if permission is given.</p>
             </div>
             <div class="project-containers">
                 <div class="project-body" onmouseover="showInfo(1)" onmouseout="hideInfo(1)">
@@ -278,7 +282,7 @@
             <p>LinkedIn:</p><a href="">Fateh Mudassar</a>
         </div>
         <div class="footer-3 footer-con">
-            <h1>Navigation:</h1>
+            <h1>Quick Menu:</h1>
             <br>
             <a href="#home">Home</a>
             <a href="#about">About</a>

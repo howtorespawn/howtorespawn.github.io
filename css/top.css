@@ -75,55 +75,6 @@
     animation-name: revealsudden;
     animation-duration: 3s;
 }
-@keyframes reveal {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes revealsudden {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes animationreveal {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 40%;
-    }
-}
-@keyframes blink {
-    0%{
-        transform: scaleY(1);
-        opacity: 1;
-    }
-    45%{
-        opacity: 1;
-        transform: scaleY(1);
-    }
-    50%{
-        opacity: 0;
-        transform: scaleY(0);
-    }
-    55%{
-        opacity: 1;
-        transform: scaleY(1);
-    }
-    100%{
-        opacity: 1;
-        transform: scaleY(1);
-    }
-}
 
 @media (min-width:1024px) {
     .top-description{
@@ -149,15 +100,43 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: red;
+        animation: tilt-shaking 1s;
+    }
+    #cat-text{
+        position: absolute;
+        bottom:100px;
+        text-align: center;
+        opacity: 0;
+    }
+    .cat-gun{
+        position:absolute;
+        width: 100px;
+        z-index: 100;
+        top:0px;
+        opacity: 0;
+    }
+    .right-funny{
+        right:140px;
+    }
+    .left-funny{
+        left:120px;
     }
     .cat-body{
         position: absolute;
     }
     .cat-eyes{
         position: absolute;
-        right: 30%;
+        left: -9vw;
         animation: blink 5s infinite;
+    }
+    .cat-mark{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 2vw;
+        bottom:8px;
+        animation:hide 1s;
+        animation-fill-mode: forwards;
     }
     .cat-mouth{
         position: absolute;
