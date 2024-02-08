@@ -39,10 +39,10 @@ function hideDontTouchMe() {
 function catFunny() {
     catfunRight.style.opacity = "1";
     catfunLeft.style.opacity = "1";
-    catEyes.style.left = "-100px";
-    catMouth.style.right = "0vw";
+    catEyes.style.left = "0px";
+    catMouth.style.left = "40px";
     catText.innerText = "I warned ya!"
-    catText.style.width = "10vw"
+    catText.style.width = ""
     setInterval(() => {
         destory()
     }, 2000);
