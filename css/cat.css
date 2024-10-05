@@ -87,7 +87,6 @@
 @media (min-width:1024px) {
     .cat-section{
         user-select: none;
-        pointer-events: none;
         position: absolute;
         bottom: 20vh;
         left: 50vw;
