@@ -55,14 +55,14 @@
   -o-transition: all 1s;
   position: absolute;
   color: #fff;
-  width: 100%;
+  /* width: 100%; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   height: 0px;
   overflow: hidden;
-  a {
-    color: #fff;
-  }
+}
+a {
+  color: #fff;
 }
 
 .dropdown-content a {
@@ -110,7 +110,39 @@ path {
   .main-nav {
     margin: 0px 5%;
   }
+}
+@media (max-width: 700px) {
+  .ml {
+    display: none;
+  }
+  .main-nav {
+    margin: 0px 5%;
+  }
   .options {
     gap: 5px;
   }
+  .logo {
+    font-size: 30px;
+  }
+  .options{
+    font-size: 20px;
+  }
+  .dropbtn{
+    font-size: 20px;
+  }
+  .dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .droparrow{
+    display: none;
+  }
+  .dropdown-content {
+    position: absolute;
+    top:40px;
+  }
+}
+.droparrow{
+  height: 20px;
 }
