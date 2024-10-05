@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/body.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/cat.css" />
+    <link rel="stylesheet" href="/css/presets.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.5.0/tsparticles.confetti.bundle.min.js"
+      integrity="sha256-cNBuO0r8kXxdJfvGsyL61LXsBiKIpZ+6jDj8wxxPxRM="
+      crossorigin="anonymous"
+    ></script>
+    <title>Home Page | HowToRespawn</title>
+  </head>
+  <body id="body">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-links@3.0.2/tsparticles.preset.links.bundle.min.js"></script>
+    <script type="text/javascript">
+      (async () => {
+        await tsParticles.load({
+          id: "tsparticles",
+          options: {
+            background: {
+              color: "#000", // this sets a background color for the canvas
+            },
+            fpsLimit: 30,
+            fullScreen: {
+              enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
+              zIndex: -10, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
+            },
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: true, // enables the click event
+                  mode: "push", // adds the particles on click
+                },
+                onHover: {
+                  enable: true, // enables the hover event
+                  mode: "repulse", // make the particles run away from the cursor
+                },
+              },
+              modes: {
+                push: {
+                  quantity: 4, // number of particles to add on click
+                },
+                repulse: {
+                  distance: 50, // distance of the particles from the cursor
+                },
+              },
+            },
+            particles: {
+              links: {
+                distance: 150,
+                enable: true,
+                opacity: 0.5,
+              },
+              move: {
+                enable: true,
+                random: true,
+                speed: { min: 1, max: 3 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
+              },
+
+              number: {
+                density: {
+                  enable: true,
+                },
+                value: 70,
+              },
+              opacity: {
+                value: { min: 0.3, max: 0.7 }, // using a different opacity, to have some semitransparent effects
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                value: { min: 1, max: 1 }, // let's randomize the particles size a bit
+              },
+            },
+            detectRetina: true,
+          },
+        });
+      })();
+    </script>
+    <nav class="main-nav">
+      <div class="mr">
+        <div>
+          <div class="logo">Duckie</div>
+          <div class="options">
+            <div class="dropdown">
+              <button class="dropbtn">
+                Services
+                <img
+                  style="height: 20px"
+                  src="media/arrow-down-svgrepo-com.svg"
+                  alt=""
+                />
+              </button>
+              <div class="dropdown-content">
+                <div class="dropdown-line"></div>
+                <div>
+                  <a href="#">Website</a>
+                  <a href="#">Roblox</a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Projects
+                <img
+                  style="height: 20px"
+                  src="media/arrow-down-svgrepo-com.svg"
+                  alt=""
+                />
+              </button>
+              <div class="dropdown-content">
+                <div class="dropdown-line"></div>
+                <div>
+                  <a href="#">Website</a>
+                  <a href="#">Roblox</a>
+                </div>
+              </div>
+            </div>
+            <div>About</div>
+          </div>
+        </div>
+      </div>
+      <div class="ml">
+        <a href="https://discordapp.com/users/743776395183915028">
+          <svg
+            class="discord-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M18.8943 4.34399C17.5183 3.71467 16.057 3.256 14.5317 3C14.3396 3.33067 14.1263 3.77866 13.977 4.13067C12.3546 3.89599 10.7439 3.89599 9.14391 4.13067C8.99457 3.77866 8.77056 3.33067 8.58922 3C7.05325 3.256 5.59191 3.71467 4.22552 4.34399C1.46286 8.41865 0.716188 12.3973 1.08952 16.3226C2.92418 17.6559 4.69486 18.4666 6.4346 19C6.86126 18.424 7.24527 17.8053 7.57594 17.1546C6.9466 16.92 6.34927 16.632 5.77327 16.2906C5.9226 16.184 6.07194 16.0667 6.21061 15.9493C9.68793 17.5387 13.4543 17.5387 16.889 15.9493C17.0383 16.0667 17.177 16.184 17.3263 16.2906C16.7503 16.632 16.153 16.92 15.5236 17.1546C15.8543 17.8053 16.2383 18.424 16.665 19C18.4036 18.4666 20.185 17.6559 22.01 16.3226C22.4687 11.7787 21.2836 7.83202 18.8943 4.34399ZM8.05593 13.9013C7.01058 13.9013 6.15725 12.952 6.15725 11.7893C6.15725 10.6267 6.98925 9.67731 8.05593 9.67731C9.11191 9.67731 9.97588 10.6267 9.95454 11.7893C9.95454 12.952 9.11191 13.9013 8.05593 13.9013ZM15.065 13.9013C14.0196 13.9013 13.1652 12.952 13.1652 11.7893C13.1652 10.6267 13.9983 9.67731 15.065 9.67731C16.121 9.67731 16.985 10.6267 16.9636 11.7893C16.9636 12.952 16.1317 13.9013 15.065 13.9013Z"
+                stroke="#ffffff"
+                stroke-width="1.1"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+        </a>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M18.8943 4.34399C17.5183 3.71467 16.057 3.256 14.5317 3C14.3396 3.33067 14.1263 3.77866 13.977 4.13067C12.3546 3.89599 10.7439 3.89599 9.14391 4.13067C8.99457 3.77866 8.77056 3.33067 8.58922 3C7.05325 3.256 5.59191 3.71467 4.22552 4.34399C1.46286 8.41865 0.716188 12.3973 1.08952 16.3226C2.92418 17.6559 4.69486 18.4666 6.4346 19C6.86126 18.424 7.24527 17.8053 7.57594 17.1546C6.9466 16.92 6.34927 16.632 5.77327 16.2906C5.9226 16.184 6.07194 16.0667 6.21061 15.9493C9.68793 17.5387 13.4543 17.5387 16.889 15.9493C17.0383 16.0667 17.177 16.184 17.3263 16.2906C16.7503 16.632 16.153 16.92 15.5236 17.1546C15.8543 17.8053 16.2383 18.424 16.665 19C18.4036 18.4666 20.185 17.6559 22.01 16.3226C22.4687 11.7787 21.2836 7.83202 18.8943 4.34399ZM8.05593 13.9013C7.01058 13.9013 6.15725 12.952 6.15725 11.7893C6.15725 10.6267 6.98925 9.67731 8.05593 9.67731C9.11191 9.67731 9.97588 10.6267 9.95454 11.7893C9.95454 12.952 9.11191 13.9013 8.05593 13.9013ZM15.065 13.9013C14.0196 13.9013 13.1652 12.952 13.1652 11.7893C13.1652 10.6267 13.9983 9.67731 15.065 9.67731C16.121 9.67731 16.985 10.6267 16.9636 11.7893C16.9636 12.952 16.1317 13.9013 15.065 13.9013Z"
+            stroke="#ffffff"
+            stroke-width="1.1"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <a
+          href="mailto:howtorespawn@gmail.com?subject=Website%20Needed&body=I%20would%20Request%20a%20website."
+        >
+          <img
+            style="height: 54px"
+            src="./media/send1.svg"
+            alt="discord account"
+          />
+        </a>
+      </div>
+    </nav>
+    <section class="intro">
+      <h1>Hello,</h1>
+      <h2>I am HowToRespawn</h2>
+      <div class="typer">
+        <h2>A</h2>
+        <h2>
+          <span id="typewriter" data-array=""></span>
+          <span class="cursor"></span>
+        </h2>
+      </div>
+      <div class="btn-group">
+        <button class="button-5" role="button">Contact Me!</button>
+        <button class="button-5 f-btn" role="button">Projects!</button>
+      </div>
+    </section>
+    <section class="cat-section pc" id="cat-section">
+      <div
+        class="cat"
+        id="cat"
+        onclick="catAnimation()"
+        onmouseover="catLook()"
+        onmouseout="catLookAway()"
+      >
+        <h1 id="cat-text">Welcome To This Website.</h1>
+        <img
+          class="cat-gun right-funny"
+          id="catGunRight"
+          src="media/cat/right funny.png"
+          alt="gunny :D"
+        />
+        <img
+          class="cat-gun left-funny"
+          id="catGunLeft"
+          src="media/cat/left funny.png"
+          alt="gunny :D"
+        />
+        <img class="cat-body" src="/media/cat/body.svg" alt="no meow ;c" />
+        <img
+          class="cat-mark"
+          id="cat-mark"
+          src="/media/cat/angry.png"
+          alt="no meow :C"
+        />
+        <img
+          class="cat-eyes"
+          id="cat-eyes"
+          src="/media/cat/eyes.svg"
+          alt="no meow :C"
+        />
+        <img
+          class="cat-mouth"
+          id="cat-mouth"
+          src="/media/cat/mouth.svg"
+          alt="no meow :c"
+        />
+      </div>
+    </section>
+    <section id="screenByeBye">
+      <img
+        style="height: 100vh; width: 100vw; overflow: hidden"
+        src="./media/cat/screenByeBye.jpg"
+        alt=""
+      />
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
